@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Prog WEB Project</title>
+    <!--Les liens vers le script et vers le tableau des styles-->
+    <link rel="stylesheet" href="Style_projectWeB.css"/>
+    <script type ="text/javascript" src="jquery-3.7.1.js"></script>
+    <script type ="text/javascript" src="script_projectWeB.js"></script>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <div class="header">
+            <div id="title_page">WELCOME TO THE CLASSROOM</div>
+            <b></b>
+            <div class="navig">
+                <!-- Le mode nuit-->
+                <div id="nightmode";>NIGHTMODE</div>
+                <!--Une fois couvert par le curseur, ce mot va afficher les informations sur l'auteur et la nature de projet.-->
+                <div class="about">ABOUT</div>
+                <!-- On peut choisir le langage du site en cliquant ces boutons-->
+                <div class ="button_lang">
+                        <button id="translation_en">ENGLISH</button>
+                        <button id="translation_fr">FRANÇAIS</button>
+                </div>
+            </div>
+        </div>
+        <!-- Exercices et la progression-->
+        <div class="content">
+            <div class="exercice-section">
+                <p id="titre_ex">Exercises</p>
+                        <!--Progression-->
+                        <div class="exerc">
+                            <!--Ces boutons permettent d'accéder la page d'une exercice correspondante.-->
+                                <button onclick="location.href = '/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex1.html';" class= exercs id="compr_or">Listening Comprehension</button>
+                                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex2.html';" class= exercs id="art">Articles</button>
+                                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex3.html';"class= exercs id="voc">Vocabulary</button>
+                                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex4.html';"class= exercs id="theorie">Theoretical Questions</button>
+                                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex5.html';"class= exercs id="concord">Sequence of Tenses</button>
+                        </div>
+            </div>
+
+            <div class="progress-section">
+                <p id="titre_prog">Your Progress</p>
+                <p id="titre_prog_ex">Exercises left: <span id="clicked_tache">5</span></p>
+                <div class="progress-section-decor">
+                <p id="titre_score"><span id="total">0</span> / 28</p>
+                </div>
+                <!--Le bouton pour effacer la progression.-->
+                <p id="titre_restart">Restart</p>
+                <button id="Erase">X</button>
+        </div>
+    </main>
+</body>
+</html>

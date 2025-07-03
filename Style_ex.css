@@ -1,0 +1,376 @@
+/* Ce tableau des styles se base sur le tableau de la page d'accueil.
+Les séctions concernants le langage du site, ansi que la séction pop-up et le mode nuit ont étées gardés.
+Toutes les pages d'exercices utilisent ce tableau, donc il garde les parametres d'affichage des résultats,
+les consignes (commun pour tous les exercs), les zones uniques pour les ex. de type drag-and-drop,
+ainsi que de la navigation etc.*/
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    justify-items: auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d07e3b;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #555;
+}
+.navig{
+    display: flex;
+    justify-content:space-between;
+}
+.about {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.exercs{
+    margin-bottom: 15px;
+}
+
+.draggable{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color:#e7b469;
+}
+.dropzone{
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color:#ddd7ce;
+    font-style: italic;
+    padding: auto;
+    margin: 10px;
+}
+
+#nightmode {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 7px 3px 3px #555;
+
+}
+
+.night-mode .draggable{
+    background-color: #333;
+    color: #d07e3b;
+}
+.button_lang {
+    font-size: large;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.exerc_content{
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5d49f;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    border: 3px solid #555;
+    border-radius: 10px;
+    box-sizing:border-box;
+    box-shadow: 10px 5px 5px #555;
+}
+.exerc_section{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.consigne-section{
+padding: 10px;
+border-radius: 10px;
+background-color: #e7b469;
+border: 1px solid #555;
+
+}
+#exerc1, #exerc2, #exerc3, #exerc4, #exerc5{
+margin-top: 3px;
+padding: 10px;
+}
+
+.Score{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #d07e3b;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+audio{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#check1, #check2, #check3, #check4, #check5{
+padding: 15px;
+background-color: #0d9e0a;
+border-radius: 10px;
+border: 2px solid #92c86e;
+margin-top: 10px;
+margin-bottom: 10px;
+box-shadow: 3px 2px 2px #92c86e;
+font-weight: bold;
+}
+#result1, #result2, #result3, #result4, #result5 {
+    text-align: right;
+    flex-grow: 1;
+    margin-left: 20px;
+
+}
+.text_result{
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.navig2 {
+    display: inline-flex;
+    padding: 10px;
+    background-color: #d07e3b;
+    border-radius: 10px;
+    border: 2px solid #555;
+    box-shadow: 5px 3px 3px #555;
+    gap: 10px;
+    align-items: center;
+    }
+
+#back2main, .back, .forth{
+    margin-right: 7px;
+    margin-left: 7px;
+    padding: 10px 15px;
+    border: 1px solid #555;
+    background-color: #f5d49f;
+    border-radius: 5px;
+    box-shadow: 5px 3px 3px #555;
+}
+
+body.night-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.night-mode .back {
+    color: #d07e3b;
+    background-color: #333;
+}
+.night-mode .forth {
+    color: #d07e3b;
+    background-color: #333;
+}
+.night-mode #back2main{
+    color: #d07e3b;
+    background-color: #333;
+}
+
+.night-mode #title_page,
+.night-mode,
+.night-mode .button_lang button {
+    color: #f9f9f9;
+}
+.night-mode #nightmode{ 
+    color: #d07e3b;
+}
+.night-mode .consigne-section{
+    background-color: #333;
+    color: #d07e3b;
+}
+.night-mode .exerc_content{
+background-color: #d07e3b;
+color: #333;
+}
+
+.night-mode .Score{
+    background-color: #f5d49f;
+    border-color: #333;
+}
+
+.night-mode .button_lang button {
+    background-color: #333;
+    color: #d07e3b;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.night-mode .exercice-section {
+background-color: #444;
+color: #f9f9f9;
+border: 3px solid #555;
+
+}
+.night-mode .progress-section {
+background-color: #444;
+color: #f9f9f9;
+border: 3px solid #555;
+
+}
+
+.night-mode .exercs{
+    background-color: #333;
+    color:#d07e3b;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.night-mode .popup-message{
+    color:#d07e3b;
+    background-color: #444;
+    border: 1px solid #555;
+}
+
+/*Pop-up*/
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d07e3b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+    max-width: 300px;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0.9;
+    box-shadow: 10px 5px 5px #555;
+
+}
+
+.correct { color: green; }
+.incorrect { color: red; }
+
+.exerc_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.exerc_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.consigne-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    height: 120px;
+    width: 213px;
+    border-radius: 5px;
+    border: 3px solid #333;
+    box-shadow: 10px 5px 5px #555;
+}
+
+
+.img_drop {
+    width: 213px;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+/* Container for answers */
+.answers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img_answ{
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e7b469;
+    color: #444;
+    border: #333 2px solid;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px #333;
+}
+.night-mode .img_answ{
+    background-color: #d07e3b;
+    color: #444;
+}
+.draggable{
+    font-weight: bold;
+}
+
+#cons1, #cons2, #cons3, #cons4, #cons5 {
+    font-weight: bold;
+}
+
+.rep_5 {
+    padding: auto;
+    border: 3px #333 solid;
+    border-radius: 5px;
+    background-color: #555;
+    color: #f5d49f;
+    padding: 5px;
+}
+.phrase{
+    margin-top: 20px;
+}

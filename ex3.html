@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Prog WEB Project</title>
+    <link rel="stylesheet" href="Style_ex.css"/>
+    <script type ="text/javascript" src="jquery-3.7.1.js"></script>
+    <script type ="text/javascript" src="script_projectWeB.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/favicon-32x32.png">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <div class="header">
+            <div id="title_page">WELCOME TO THE CLASSROOM</div>
+            <b></b>
+            <div class="navig">
+                <div id="nightmode">NIGHTMODE</div>
+                <div class="about">ABOUT</div>
+                <div class ="button_lang">
+                        <button id="translation_en">ENGLISH</button>
+                        <button id="translation_fr">FRANÇAIS</button>
+                </div>
+            </div>
+        </div>
+        <div class="exerc_content">
+                <div class="exerc_section">
+                    <!--Consigne.-->
+                    <div class="consigne-section">
+                        <!--Partie executive. Cet exercice est de type glisser-deposer.-->
+                        <span id="cons3">Exercise 3:</span> 
+                        <span id="cons3a">Match the appropriate word with each image.</span>
+                    </div>  
+                    <div class="image-container">
+                        <div class="image-item">
+                            <img src="fleuve.jpg" alt="Fleuve" class="image"/>
+                            <div class="img_drop" id="img1"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="riviere.jpg" alt="Rivière" class="image"/>
+                            <div class="img_drop" id="img2"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="mer.jpg" alt="Mer" class="image"/>
+                            <div class="img_drop" id="img3"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="ocean.jpg" alt="Océan" class="image"/>
+                            <div class="img_drop" id="img4"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="lac.jpg" alt="Lac" class="image"/>
+                            <div class="img_drop" id="img5"></div>
+                        </div>
+                    </div>
+                    <div class="answers-container">
+                        <div class="img_answ" draggable="true" id="img_answ1">Une fleuve</div>
+                        <div class="img_answ" draggable="true" id="img_answ5">Un lac</div>
+                        <div class="img_answ" draggable="true" id="img_answ4">Un océan</div>
+                        <div class="img_answ" draggable="true" id="img_answ3">Une mer</div>
+                        <div class="img_answ" draggable="true" id="img_answ2">Une rivière</div>
+                    </div>
+                </div>
+                <!--Résultats.-->
+                <div class="Score">
+                    <button id="check3">Check your answers</button>
+                    <p id="result3"><span class="text_result"> </span><span> </span> </p>
+                </div> 
+        </div>
+        <footer>
+            <!--Cette séction gère la navigation vers les autres exercices, ainsi que permet de retourner à la page d'acceuil.-->
+            <div class="navig2">
+                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/project_WeB.html';" id="back2main">Back to main page</button>
+                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex2.html';" class="back">Previous exercise</button>
+                <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex4.html';" class="forth">Next exercise</button>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

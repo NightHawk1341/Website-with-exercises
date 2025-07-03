@@ -1,0 +1,227 @@
+/* Ce tableau gère les styles des séctions de la page d'accueil.
+Il garde les informations sur le mode nuit,
+ainsi que sur tous les changement dans la decoration des séctions de type "button.*/
+
+/*Les décorations de toutes les séctions principales.
+Dans la majorité des cas j'ai utilisé les flexbox afin de gérer l'espace sur la page.*/
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    justify-items: auto;
+    transition: background-color 0.3s, color 0.3s;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d07e3b;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #555;
+}
+.navig{
+    display: flex;
+    justify-content:space-between;
+}
+.about {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.exercs{
+    margin-bottom: 15px;
+}
+
+#nightmode {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f9f9f9;
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 7px 3px 3px #555;
+}
+
+.button_lang {
+    font-size: large;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.content .exercice-section, .content .progress-section {
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5d49f;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    border: 3px solid #555;
+    border-radius: 5px;
+}
+.content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.exercice-section, .progress-section {
+    background-color: #f0c88c;
+    padding: 20px;
+    border: 10px solid #555;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 10px 5px 5px #555;
+}
+.progress-section{
+    size-adjust: auto;
+}
+.content .progress-section{
+    text-align: center;
+}
+.night-mode .progress-section-decor{
+    background-color: #333;
+    color: #d07e3b;
+}
+.progress-section-decor{
+    border: 3px solid #333;
+    background-color:#d07e3b;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #555;
+}
+#titre_prog{
+    font-size: large; font-weight: bold;
+}
+#titre_score{
+    font-weight: bold;
+}
+.night-mode #titre_score{
+    font-weight: bold;
+}
+#titre_restart{
+    font-size: large; font-weight: bold;
+}
+
+.exerc{
+    display: flex;
+    flex-direction: column;
+    
+}
+#titre_ex{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    font-size: 22px
+}
+.exercs{
+    background-color: #d07e3b;
+    padding: 10px;
+    border: 3px solid #333;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px #555;
+    border-radius: 10px;
+}
+
+/*Mode nuit*/
+
+body.night-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.night-mode #title_page,
+.night-mode #done,
+.night-mode #undone,
+.night-mode,
+.night-mode .button_lang button {
+    color: #f9f9f9;
+}
+.night-mode #nightmode{ 
+    color: #d07e3b;
+}
+
+.night-mode .button_lang button {
+    background-color: #333;
+    color: #d07e3b;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.night-mode .exercice-section {
+background-color: #444;
+color: #f9f9f9;
+border: 3px solid #555;
+
+}
+.night-mode .progress-section {
+background-color: #444;
+color: #f9f9f9;
+border: 3px solid #555;
+
+}
+.night-mode .exercs{
+    background-color: #333;
+    color:#d07e3b;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.night-mode .popup-message{
+    color:#d07e3b;
+    background-color: #444;
+    border: 1px solid #555;
+}
+
+/*Pop-up*/
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #d07e3b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+    max-width: 300px;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0.9;
+    box-shadow: 10px 5px 5px #555;
+
+}
+
+/* Bouton pour effacer les résultats. */
+#Erase{
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-shadow: 5px 2px 2px rgb(137, 72, 72);
+    font-size: large;
+    font-weight: bold;
+    }

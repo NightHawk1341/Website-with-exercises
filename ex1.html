@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Prog WEB Project</title>
+    <link rel="stylesheet" href="Style_ex.css"/>
+    <script type ="text/javascript" src="jquery-3.7.1.js"></script>
+    <script type ="text/javascript" src="script_projectWeB.js"></script>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.ico">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <div class="header">
+            <div id="title_page">WELCOME TO THE CLASSROOM</div>
+            <b></b>
+            <div class="navig">
+                <div id="nightmode">NIGHTMODE</div>
+                <div class="about">ABOUT</div>
+                <div class ="button_lang">
+                        <button id="translation_en">ENGLISH</button>
+                        <button id="translation_fr">FRANÇAIS</button>
+                </div>
+            </div>
+        </div>
+        <div class="exerc_content">
+            <div class="exerc_section">
+            <!--Consigne.-->
+            <div class="consigne-section"><span id="cons1">Exercise 1: </span><span id='cons1a'>Listen to the audio recording and fill in the gaps in the phrases</span></div>
+            <!--Une dialogue à écouter.-->
+            <audio controls src="/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/Audio_Project.mp3" type="audio/ogg"></audio>
+            <!--Partie executive. Cet exercice prend un input écrit comme la réponse.-->
+            <div id="exerc1">
+                    <p><input type="text" class="input" data-answer="Maxence"> : "Salut, <input type="text" class="input" data-answer="Camille"> ! Tu es libre ce week-end pour une <input type="text" class="input" data-answer="randonnée"> avec nous ?"</p>
+                    <p><input type="text" class="input" data-answer="Camille"> : "J’adorerais, mais je dois étudier pour un examen important <input type="text" class="input" data-answer="lundi">."</p>
+                    <p><input type="text" class="input" data-answer="Maxence"> : "C’est dommage. Peut-être que tu pourras venir la prochaine fois ?"</p>
+                    <p><input type="text" class="input" data-answer="Camille"> : "Oui, bien sûr ! Dis-moi quand vous organiserez la prochaine sortie."</p>
+                    <p><input type="text" class="input" data-answer="Maxence"> : "Ça marche ! Bonne chance pour tes études."</p>
+            </div>
+            <!--Résultats.-->
+            <div class="Score">
+                <button id="check1">Check your answers</button>
+                <p id="result1"><span class="text_result"> </span><span> </span> </p>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <!--Cette séction gère la navigation vers les autres exercices, ainsi que permet de retourner à la page d'acceuil.-->
+        <div class="navig2">
+            <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/project_WeB.html';" id="back2main">Back to main page</button>
+            <button onclick="location.href ='/Users/nikitaduzenko/Desktop/Prog_WEB/project_web/ex2.html';" class="forth">Next exercise</button>
+        </div>
+    </footer>
+</body>
+</html>
