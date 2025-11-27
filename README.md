@@ -34,6 +34,7 @@ Ce projet a été développé comme exercice pédagogique personnel, dans le cad
 ---
 
 ## Structure du projet
+```
 / (racine)
 │  index.html            — page d’accueil
 │  ex1.html, ex2.html…   — pages d’exercices
@@ -41,4 +42,5 @@ Ce projet a été développé comme exercice pédagogique personnel, dans le cad
 │  Style_ex.css / Style_projectWeB.css — styles CSS  
 │  images/               — illustrations (si utilisées)  
 │  …                     — autres fichiers statiques (favicon, etc.)
+```
 
