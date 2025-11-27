@@ -1,4 +1,4 @@
-# Website-with-exercises 📝  
+# Website-with-exercises
 Site d’exercices de français pour élèves de l’école primaire
 
 ## Description  
